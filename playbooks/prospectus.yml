@@ -7,7 +7,7 @@
     ENABLE_NEWRELIC: False
     CLUSTER_NAME: 'prospectus'
   roles:
-#    - aws
+    - aws
     - role: nginx
       nginx_default_sites:
         - prospectus
