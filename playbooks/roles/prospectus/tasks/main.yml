@@ -1,5 +1,11 @@
 # Copy over the target from the previous build to where it needs to be
 
+- name: find out current working directory
+  command: pwd
+
+- name: list current working directory contents
+  command: "ls -lah"
+
 - name: Copy prospectus static files
   copy:
     src: "public/"
