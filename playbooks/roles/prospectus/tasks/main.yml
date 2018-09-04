@@ -1,11 +1,5 @@
 # Copy over the target from the previous build to where it needs to be
 
-- name: find out current working directory
-  command: pwd
-
-- name: list current working directory contents
-  command: "ls -lah"
-
 - name: Copy prospectus static files
   synchronize: # Copy is insanely slow, don't use it
     src: "../../target/public/" # /godata/pipelines/stage-prospectus/target/public
