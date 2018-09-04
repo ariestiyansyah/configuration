@@ -7,6 +7,6 @@
   command: "ls -lah"
 
 - name: Copy prospectus static files
-  copy:
+  synchronize: # Copy is insanely slow, don't use it
     src: "../../target/public/" # /godata/pipelines/stage-prospectus/target/public
     dest: "/www/data/"
