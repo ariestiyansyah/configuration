@@ -1,0 +1,6 @@
+# Copy over the target from the previous build to where it needs to be
+
+- name: Copy prospectus static files
+  copy:
+    src: "public/"
+    dest: "/www/data/"
