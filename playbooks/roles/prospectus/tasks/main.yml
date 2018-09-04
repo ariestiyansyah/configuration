@@ -8,5 +8,5 @@
 
 - name: Copy prospectus static files
   copy:
-    src: "public/"
+    src: "../../target/public/" # /godata/pipelines/stage-prospectus/target/public
     dest: "/www/data/"
